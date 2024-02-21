@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- User Stories:
+
+You can see at least three clickable elements inside the nav element, each with the class nav-link
+
+When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+
+When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
+
+The navbar should always be at the top of the viewport
+Your product landing page should have at least one media query
+Your product landing page should utilize CSS flexbox at least once -->
+
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Pacotes</title>
+  </head>
+  <body>
+    <header id="header">
+        <section id="titulo">
+            <img id="header-img" src="data:image/jpeg;base64,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" alt="logo" width="70px">
+            <h1>japassei.com</h1>
+        </section>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link">Recursos</a></li>
+                <li><a href="#video" class="nav-link">Qual a importância?</a></li>
+                <li><a class="nav-link">Preços</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <fieldset id="alinhamento-geral">
+            <form method="post" action="https://www.freecodecamp.com/email-submit" id="form">
+                <h2 id="requisicao">Registre-se para receber nossos dados e atualizações!</h2>
+                <input id="email" type="email" placeholder="Digite seu melhor email!">
+                <input id="submit" type="submit">
+            </form>
+            <section id="infos">
+                <fieldset class="argumentos">
+                    <figure class="icons"><ion-icon name="arrow-down-circle-outline"></ion-icon></figure>
+                    <div class="textos"><h2>Uma nova forma de divulgar o seu negócio local!</h2>
+                    <p>Uma maneira totalmente nova de chegar a moradores locais.</p></div>
+                </fieldset>
+                <fieldset class="argumentos">
+                    <figure class="icons"><ion-icon name="add-circle-outline"></ion-icon></figure>
+                    <div class="textos"><h2>Uma nova forma de divulgar o seu negócio local!</h2>
+                    <p>Uma maneira totalmente nova de chegar a moradores locais.</p></div>
+                </fieldset>
+                <fieldset class="argumentos">
+                    <figure class="icons"><ion-icon name="add-circle-outline"></ion-icon></figure>
+                    <div class="textos"><h2>Uma nova forma de divulgar o seu negócio local!</h2>
+                    <p>Uma maneira totalmente nova de chegar a moradores locais.</p></div>
+                </fieldset>
+            </section>
+            <section id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6e-nbNheQUQ?si=KwgzgQXsLdD496SD" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+            <div class="planos">
+                <fieldset class="plano-caixa">
+                    <div class="subtitle-background"><h3>Título</h3></div>
+                    <p></p>
+                </fieldset>
+                <fieldset class="plano-caixa">
+                    <div class="subtitle-background"><h3>Título</h3></div>
+                    <p></p>
+                </fieldset>
+                <fieldset class="plano-caixa">
+                    <div class="subtitle-background"><h3>Título</h3></div>
+                    <p></p>
+                </fieldset>
+            </div>
+            <footer></footer>
+        </fieldset>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
