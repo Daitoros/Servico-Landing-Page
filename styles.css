@@ -52,6 +52,11 @@ figure{
     display: flex;
     max-width: 700px;
     margin: auto;
+    margin: 0px auto 30px;
+}
+
+#video{
+    margin: 0px auto 30px;
 }
 
 .textos{
@@ -59,19 +64,74 @@ figure{
 }
 
 #alinhamento-geral{
-    margin-top: 100px;
+    margin: 100px auto auto;
     background-color: transparent;
+    max-width: 980px;
+    border: none;
 }
 
 .subtitle-background{
-    background-color: blue;
+    background-color: gray;
     margin-top: -20px;
 }
-
-.plano-caixa{
+.planos{
     padding: 0 0 5px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(3, min-content);
-    gap: 2rem;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 10px;
+    justify-content: center;
+}
+.plano-caixa{
+    padding: 0%;
+    width: 100%;
+    margin: 0px auto 30px;
+
+}
+
+#caixa1{
+    grid-column: 1 / 2;
+    justify-self: center;
+    border-radius: 5px;
+}
+#caixa2{
+    grid-column: 2 / 3;
+    justify-self: center;
+    border-radius: 5px;
+}
+#caixa3{
+    grid-column: 3 / 4;
+    justify-self: center;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer{
+    background-color: yellow;
+    height: 80px;
+    display: block;
+    margin-bottom: -50px;
+    justify-content: end;
+    padding: 10px;
+    max-width: 900px;
+}
+footer > ul{
+    display: flex;
+    justify-content: flex-end;
+}
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+footer > ul > li {
+    display: block;
+    margin-left: 2rem;
+}
+
+@media (max-width: 900px){
+    .planos{
+        grid-template-columns: 300px 300px;
+    }
 }

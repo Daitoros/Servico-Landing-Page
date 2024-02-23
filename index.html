@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <!-- User Stories:
 
-You can see at least three clickable elements inside the nav element, each with the class nav-link
-
-When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
-
 When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
 
-The navbar should always be at the top of the viewport
 Your product landing page should have at least one media query
 Your product landing page should utilize CSS flexbox at least once -->
 
@@ -26,9 +21,9 @@ Your product landing page should utilize CSS flexbox at least once -->
         </section>
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link">Recursos</a></li>
+                <li><a href="#infos" class="nav-link">Recursos</a></li>
                 <li><a href="#video" class="nav-link">Qual a importância?</a></li>
-                <li><a class="nav-link">Preços</a></li>
+                <li><a href="#caixa1" class="nav-link">Preços</a></li>
             </ul>
         </nav>
     </header>
@@ -62,20 +57,34 @@ Your product landing page should utilize CSS flexbox at least once -->
                 gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
             <div class="planos">
-                <fieldset class="plano-caixa">
-                    <div class="subtitle-background"><h3>Título</h3></div>
-                    <p></p>
+                <fieldset class="plano-caixa" id="caixa1">
+                    <div class="subtitle-background"><h3>Pacote 1</h3></div>
+                    <p>Aparição em uma praça cadastrada</p>
+                    <p>Dados mensais de visitas</p>
+                    <p><strong>R$50,00/mês</strong></p>
                 </fieldset>
-                <fieldset class="plano-caixa">
-                    <div class="subtitle-background"><h3>Título</h3></div>
-                    <p></p>
+                <fieldset class="plano-caixa" id="caixa2">
+                    <div class="subtitle-background"><h3>Pacote 2</h3></div>
+                    <p>Aparição em duas praças cadastradas</p>
+                    <p>Dados mensais de visitas</p>
+                    <p><strong>R$100,00/mês</strong></p>
                 </fieldset>
-                <fieldset class="plano-caixa">
-                    <div class="subtitle-background"><h3>Título</h3></div>
-                    <p></p>
+                <fieldset class="plano-caixa" id="caixa3">
+                    <div class="subtitle-background"><h3>Pacote 3</h3></div>
+                    <p>Aparição em três praças cadastradas</p>
+                    <p>Dados mensais de visitas</p>
+                    <p>Duas malas diretas mensais</p>
+                    <p><strong>R$200,00/mês</strong></p>
                 </fieldset>
             </div>
-            <footer></footer>
+            <footer>
+                <ul>
+                    <li>Privacidade</li>
+                    <li>Termos</li>
+                    <li>Contato</li>
+                </ul>
+                <span>Copyright</span>
+            </footer>
         </fieldset>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
